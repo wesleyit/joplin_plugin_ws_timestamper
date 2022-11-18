@@ -1,5 +1,5 @@
 import joplin from 'api';
-import { ToolbarButtonLocation } from 'api/types';
+import { ToolbarButtonLocation, MenuItemLocation } from 'api/types';
 
 
 function getTimeStamp() {
@@ -30,7 +30,8 @@ joplin.plugins.register({
 			},
 		});
 
-		await joplin.views.toolbarButtons.create('wstimestamper', 'wstimestamper', ToolbarButtonLocation.EditorToolbar);
+		await joplin.views.toolbarButtons.create('wstimestamperBtn', 'wstimestamper', ToolbarButtonLocation.EditorToolbar);
+		await joplin.views.menuItems.create('wstimestamperMenu', 'wstimestamper', MenuItemLocation.Tools, { accelerator: 'Ctrl+Shift+T' });
 	},
 
 });
