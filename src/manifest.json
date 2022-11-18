@@ -1,0 +1,13 @@
+{
+	"manifest_version": 1,
+	"id": "br.com.wesleyrodrigues.wstimestamper",
+	"app_min_version": "2.8",
+	"version": "1.0.0",
+	"name": "WS Timestamper",
+	"description": "Creates date timestamps",
+	"author": "Wesley Rodrigues",
+	"homepage_url": "www.wesleyrodrigues.com.br",
+	"repository_url": "www.wesleyrodrigues.com.br",
+	"keywords": [],
+	"categories": []
+}
